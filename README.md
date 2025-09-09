@@ -40,6 +40,8 @@ Automatically extract and visualize Fourier Shell Correlation (FSC) data from RE
 
 ## Example Workflow
 
+Launch AutoFSC from the PostProcess directory or alter the ```text input_file variable```, by default postprocess.star, to a complete filepath.
+
 ```bash
 python RELION-AutoFSC.py
 ```
