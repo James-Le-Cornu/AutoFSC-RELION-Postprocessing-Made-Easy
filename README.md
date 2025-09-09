@@ -12,26 +12,26 @@ Automatically extract and visualize Fourier Shell Correlation (FSC) data from RE
   - Stores FSC=0.143 and FSC=0.5 resolution values in the CSV header.
 
 - **Plots Generated**
-  1. **Main FSC Plot** (`FSC_main_plot.png`)  
+  1. **Main FSC Plot - for interpretation** (`FSC_main_plot.png`)  
      - Shows unmasked, masked, and corrected FSC curves.  
      - Vertical lines indicate interpolated FSC=0.143 and FSC=0.5 resolutions.  
      - Horizontal lines at FSC thresholds.
      
-  2. **Main FSC Without Vertical Lines** (`FSC_main_no_lines.png`)  
+  2. **Main FSC Without Vertical Lines - potentially for publication figure** (`FSC_main_no_lines.png`)  
      - Same as above but without interpolation vertical lines.  
      - Useful for cleaner visualization.
      
-  3. **GSFSC FSC=0.5 Plot** (`FSC_0.5_plot.png`)  
+  3. **GSFSC FSC=0.5 Plot - potentially for publication figure** (`FSC_0.5_plot.png`)  
      - Focused plot highlighting FSC=0.5 resolution.  
      - Horizontal line at FSC=0.5.  
      - Title includes interpolated resolution value.
      
-  4. **GSFSC FSC=0.143 Plot** (`FSC_0.143_plot.png`)  
+  4. **GSFSC FSC=0.143 Plot - potentially for publication figure** (`FSC_0.143_plot.png`)  
      - Focused plot highlighting FSC=0.143 resolution.  
      - Horizontal line at FSC=0.143.  
      - Title includes interpolated resolution value.
      
-  5. **Combined 3-Panel Figure** (`FSC_combined.png`)  
+  5. **Combined 3-Panel Figure - for interpretation** (`FSC_combined.png`)  
      - Panels: Main FSC, GSFSC FSC=0.5, GSFSC FSC=0.143.  
      - All plots share consistent x-axis (log scale, inverted), y-axis, and tick formatting.  
      - Interpolated resolutions indicated in titles and/or vertical lines.
@@ -62,6 +62,8 @@ Horizontal lines highlight FSC thresholds; vertical lines mark interpolated reso
 - **Pandas**
 - **Matplotlib**
 
+After installing python install the packages using:
+
 ```bash
 pip install pandas matplotlib
 
@@ -70,7 +72,7 @@ pip install pandas matplotlib
 
 ## Notes
 
-- If applying to Cryo-EM datasets you may need to alter the x-axis values for FSC_0.5_plot.png and FSC_0.143_plot.png as the default example is from a negative stain electron microscopy dataset (low-resolution). To alter the x-axis change the x_max = 100 variable to the desired lowest resolution value and then change the tick_positions = [100, 80, 60, 40, 20, 10, 8, 6, 4, 2]. The highest resolution frequency is automatically detected so does not require changing.
+- **If applying to Cryo-EM datasets** you may need to alter the x-axis values for FSC_0.5_plot.png and FSC_0.143_plot.png as the default example is from a **negative stain electron microscopy** dataset (low-resolution). To alter the x-axis change the x_max = 100 variable to the desired lowest resolution value and then change the tick_positions = [100, 80, 60, 40, 20, 10, 8, 6, 4, 2]. The highest resolution frequency is automatically detected so does not require changing.
 
 - Uses a **logarithmic x-axis** for clarity.
 - X-axis is inverted to match standard EM plot conventions (high resolution on right).
