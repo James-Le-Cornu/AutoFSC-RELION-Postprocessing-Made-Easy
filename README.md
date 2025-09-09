@@ -44,7 +44,7 @@ Automatically extract and visualize Fourier Shell Correlation (FSC) data from RE
 
 ```bash
 python RELION-AutoFSC.py
-
+```
 
 
 **Input**: postprocess.star file from RELION postprocessing job.
