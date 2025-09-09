@@ -53,6 +53,23 @@ python RELION-AutoFSC.py
 
 Horizontal lines highlight FSC thresholds; vertical lines mark interpolated resolutions.
 
+**Example output:**
+  1. **Main FSC Plot - for interpretation** (`FSC_main_plot.png`)  
+    <img width="1800" height="1200" alt="FSC_main_plot" src="https://github.com/user-attachments/assets/fb1f1cf5-cc86-4b1a-95c2-91f7f8bb505b" />
+     
+  2. **Main FSC Without Vertical Lines - potentially for publication figure** (`FSC_main_no_lines.png`)  
+   <img width="1800" height="1200" alt="FSC_main_no_lines" src="https://github.com/user-attachments/assets/196fc97c-f8b4-4527-a9a9-683ba27f06de" />
+     
+  3. **GSFSC FSC=0.5 Plot - potentially for publication figure** (`FSC_0.5_plot.png`)  
+    <img width="1800" height="1200" alt="FSC_0 5_plot" src="https://github.com/user-attachments/assets/6ac42bc1-3a7d-4f5c-a7bd-e472ba0274b8" />
+     
+  4. **GSFSC FSC=0.143 Plot - potentially for publication figure** (`FSC_0.143_plot.png`)  
+   <img width="1800" height="1200" alt="FSC_0 143_plot" src="https://github.com/user-attachments/assets/f1c500ca-d613-4502-9557-7fe50209d80d" />
+
+  5. **Combined 3-Panel Figure - for interpretation** (`FSC_combined.png`)  
+   <img width="5400" height="1200" alt="FSC_combined" src="https://github.com/user-attachments/assets/d76b6bc7-b526-4290-ae48-8ceef007e334" />
+
+
 
 ---
 
