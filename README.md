@@ -72,7 +72,7 @@ pip install pandas matplotlib
 
 ## Notes
 
-- **If applying to Cryo-EM datasets** you may need to alter the x-axis values for FSC_0.5_plot.png and FSC_0.143_plot.png as the default example is from a **negative stain electron microscopy** dataset (low-resolution). To alter the x-axis change the x_max = 100 variable to the desired lowest resolution value and then change the tick_positions = [100, 80, 60, 40, 20, 10, 8, 6, 4, 2]. The highest resolution frequency is automatically detected so does not require changing.
+- **If applying to Cryo-EM datasets** you may need to alter the x-axis values for `FSC_0.5_plot.png` and `FSC_0.143_plot.png` as the default example is from a **negative stain electron microscopy** dataset (low-resolution). To alter the x-axis change the `x_max = 100` variable to the desired lowest resolution value and then change the `tick_positions = [100, 80, 60, 40, 20, 10, 8, 6, 4, 2]`. The highest resolution frequency is automatically detected so does not require changing.
 - Uses a **logarithmic x-axis** for clarity.
 - X-axis is inverted to match standard EM plot conventions (high resolution on right).
 - Custom tick positions are used for consistent visual appearance.
